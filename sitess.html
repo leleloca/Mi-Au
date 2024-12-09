@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi&Au</title>
+    <style>
+        body{
+            background-color: rgb(34, 34, 34);
+            color: white;
+            padding: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        div{
+            flex-direction: column;
+            line-height: 10px;
+        }
+        li{
+          display: inline-block;
+          margin: 10px;  
+        }
+        a{
+            color: white;
+        }
+        a:hover{
+            color: rgb(132, 14, 201);
+            transition: 0.3s all;
+        }
+        h1{
+            font-weight: 200px;
+        }
+        main{
+           display: flex;
+           flex-direction: row; 
+           margin-top: 50px;
+        }
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 56px;
+            line-height: 10px;
+        }
+        span{
+            color: rgb(132, 14, 201);
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 5000px;
+            line-height: 20px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+        }
+        form [type="submit"]{
+            height: 50px;
+            width: 50%;
+            color: white;
+            background-color: rgb(132, 14, 201);
+            font-weight: bold;
+        }
+        form [type="submit"]:hover{
+            cursor: pointer;
+        }
+        img{
+           width: 580px; 
+        }
+        input{
+            margin-top: 10px;
+            font-size: 15px;
+            padding: 15px;
+            border: none;
+            outline: none;
+            height: 10px;
+            border-radius: 15px;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>projeto</h1>
+            <h1>Mi&Au</h1>
+        </div>
+        <ul>
+            <a href="inicial.html"><li>inicio</li></a>
+            <a href="sitenos.html"><li>sobre</li></a>
+            <a href="siteservico.html"><li>serviços</li></a>
+            <a href="login.html"><li>serviços</li></a>
+        </ul>
+    </header>
+    <main>
+        <aside>
+            <h2><span>se inscreva</span></h2>
+            <h2>no Mi&Au</h2>
+            <p>O Projeto Mi & Au é uma ação de iniciativa coletiva, com finalidade educativa no segmento da valorização da vida, especificamente às espécies caninas e felinas. Estamos na região de Guarulhos</p>
+            <form>
+                <input type="text" placeholder="nome">
+                <input type="email" placeholder="email">
+                <input type="submit" value="enviar>">
+            
+            </form>
+        </aside>
+            <article>
+                <img src="img/cropped-logotipo-2.png" alt="imagen">
+            </article>
+       
+    </main>
+</body>
+</html>

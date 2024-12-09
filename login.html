@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/gatinho fofo.avif">
+    <link rel="stylesheet" href="mobile.css">
+    <title>Mi&Au</title>
+    <style>
+        body{
+            background-color:rgb(34, 34, 34);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 15px;
+            max-width: 1200px;
+            margin:  0 auto;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #title{
+           flex-direction: column;
+            line-height:10px ;
+        }
+        li{
+            display:inline-block;
+            margin: 20px;
+        }
+        a{
+            color: white;
+        }
+        a:hover{
+            color: rgb(132, 14, 201);
+            transition: 0.3s all;
+        }
+        h1{
+            font-weight: 200;
+        }
+        main{
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+           
+        }
+        h2{
+            font-size: 56px;
+            line-height: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        span{
+            color: rgb(132, 14, 201);
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 5000px;
+            line-height:20px ;
+        }
+        img{
+            width: 580px;
+        }
+        
+        form{
+          display: flex;
+          flex-direction: column;
+          width: 70%;  
+          
+        }
+        form [type="submit"]{
+            height: 50px;
+            width: 50%;
+            color: white;
+            background-color: rgb(132, 14, 201);
+            font-weight: bold;
+
+        }
+        form [type="submit"]:hover{
+           cursor: pointer;
+           background-color: rgb(68, 22, 110);
+           border: 2px solid white;
+        }
+        input{
+            margin-top: 20px    ;
+            height: 20px;
+            padding: 15px;
+            border-radius: 20px;
+            font-size: 15px;
+            border: none;
+        }
+        #id{
+           border: 2px solid rgb(132, 14, 201);
+           padding: 10px;
+           border-radius: 15px;
+        }
+        #id:hover{
+            background-color: rgb(132, 14, 201);
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>projeto</h1>
+            <h2>Mi&Au</h2>
+        </div>
+        <ul>
+            <a href="inicial.html"><li>Inicio</li></a>
+            <a href="siteservico.html"><li>serviços</li></a>
+            <a href="sitenos.html"><li>sobre</li></a>
+            <a href="login.html" id="id"><li>já tem uma conta?</li></a>
+        </ul>
+    </header>
+    <main>
+        <aside>
+            <h2><span>já tem uma conta</span></h2>
+            <h2>acesso logo abaixo</h2>
+
+            <form name="form1" method="post" action="verificarlogin.jsp">
+                Login: 
+                <input type="text" name="txtLogin"> <br>
+        
+                Senha:
+                <input type="password" name="txtSenha"> <br>
+        
+                <input type="submit" value="Login">
+            </form>
+        </aside>
+        <article>
+            <img src="img/gatinho fofo.avif" alt="miau">
+        </article>
+    </main>
+</body>
+</html>
